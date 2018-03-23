@@ -79,6 +79,7 @@
     },
     computed:{
       days(){
+        // 测试是否有权限long
         var nowDate = new Date();
         var oldDate = new Date('2015/02/02');
         var sumDate = parseInt((nowDate - oldDate)/(1000*60*60*24));
