@@ -1,0 +1,156 @@
+font-size = 0.7rem;
+font-size-big = 0.9rem;
+color = #ACB3C7;
+colorB = #3D3BEE
+height = 2.4rem;
+error-color = red;
+error-font-size = 0.5rem;
+.open_account
+    color: color;
+    font-size: font-size;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    .container
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .common_input_box
+            width: 84%;
+            height: height;
+            line-height: height;
+            border: 1px solid #F0F0F0;
+            margin-top: 1rem;
+            border-radius: height;
+            padding: 0 .5rem;
+            label
+                .common_input
+                    font-size: font-size;
+                    color: color;
+                    outline: none;
+                    text-indent: .5rem;
+            .error_message
+                color: error-color;
+                display: block;
+                font-size: error-font-size;
+                line-height: normal;
+                margin-top: .2rem;
+        .telphone_check
+            width: 84%;
+            height: height;
+            line-height: height;
+            border: 1px solid #F0F0F0;
+            margin-top: 1rem;
+            border-radius: height;
+            padding: 0 .5rem;
+            label
+                #telphoneCheck
+                    font-size: font-size;
+                    color: #49496A;
+                    outline: none;
+                    text-indent: .5rem;
+            .get_check
+                color: #3D3BEE;
+                font-size: font-size;
+                float: right;
+                margin-right: 1rem;
+                width: 5rem;
+                text-align: center;
+                position: relative;
+                &:before
+                    content: ' ';
+                    border: 1px solid #F0F0F0;
+                    position: absolute;
+                    left: -1rem;
+                    top: 0.6rem;
+                    height: 1rem;
+            .error_message
+                display: block;
+                color: error-color;
+                font-size: font-size;
+        .btn
+            width: 84%;
+            height: height;
+            line-height: height;
+            margin-top: 3rem;
+            border-radius: height;
+            background:  #3D3BEE;
+            span
+                display: inline-block;
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                font-size: font-size;
+                text-align: center;
+        .footer
+            width: 84%;
+            margin-top: .5rem;
+            .icon
+                display: inline-block;
+                width: .7rem;
+                height: 0.7rem;
+                background: url(./noneIcon.png) no-repeat;
+                background-size: contain;
+                vertical-align: middle;
+                &.active
+                    background: url(./rightIcon.png) no-repeat;
+                    background-size: contain;
+            .text
+                font-size: font-size;
+                line-height: 1.2rem;
+                color: #49496A;
+                font-size:.5rem;
+                a
+                    color: #49496A;
+                    font-size:.5rem;
+            .error_submit
+                font-size:.5rem;
+                color: error-color;
+                display: block;
+                text-align: center;
+    .success
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background: #fff;
+        .box
+            .close
+                color: color;
+                span
+                    display: inline-block;
+                    height: 1.2rem;
+                    width: 1.2rem;
+                    margin-left: .5rem;
+                    margin-top: .5rem;
+                    &:before
+                        content: '';
+                        display: inline-block;
+                        height: 1.2rem;
+                        border: 1px solid color;
+                        transform: rotate(-45deg);
+                        margin-left: .5rem;
+                    &:after
+                        content: '';
+                        display: inline-block;
+                        height: 1.2rem;
+                        border: 1px solid color;
+                        transform: rotate(45deg);
+                        margin-left: -0.12rem;
+            .main
+                margin: 3rem auto 0;
+                width: 82.1%;
+                .text
+                    color: colorB;
+                    text-align: center;
+                    font-size: font-size-big;
+                    margin-bottom: 1rem;
+                    img
+                        width: 1.2rem;
+                        vertical-align: text-bottom;
+
+                

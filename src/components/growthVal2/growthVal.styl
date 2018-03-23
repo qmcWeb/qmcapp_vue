@@ -1,0 +1,194 @@
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+body
+  background #f7f7f7
+.left
+  float left
+.right
+  float right
+.growthValue-wrap
+  height auto
+  .growthValue-tab
+    height 2.45rem
+    overflow hidden
+    background #fff
+    border-bottom 1px solid #d9d9d9
+    position fixed
+    left 0
+    top:0
+    width 100%
+    z-index: 111
+    p
+      width 50%
+      height 100%
+      text-align center
+      a
+        display inline-block
+        width auto
+        line-height 2.35rem
+        color #999999
+        font-size 0.75rem
+        border-bottom 0.1rem solid #fff
+        &.active
+          color #fc653f
+          border-bottom 0.1rem solid #fc653f
+  .growthValue-tab1
+    padding 0 0.75rem
+    padding-top: 2rem;
+    &.lowest
+      visibility hidden
+    .questionName
+      padding-top 0.5rem
+      font-size 0.85rem
+      font-weight bold
+      line-height 2rem
+      color #333333
+    .questionDesc1
+      line-height 0.9rem
+      font-size 0.65rem
+      color #808080
+    .questionDesc2
+      ul
+        width 100%
+        overflow hidden
+        border 1px solid #b2b2b2
+        border-bottom none
+      li
+        height 1.7rem
+        line-height 1.7rem
+        text-align center
+        border-bottom 1px solid #b2b2b2
+        font-size 0.65rem
+        color #808080
+        &:nth-child(odd)
+          float left
+          width 30%
+          border-right 1px solid #b2b2b2
+        &:nth-child(even)
+          float right
+          width 70%
+        &:nth-child(1),&:nth-child(2)
+          background #e6e6e6
+          color #333333
+    .questionDesc3
+      p
+        font-size 0.65rem
+        color #808080
+      ul
+        overflow hidden
+        border-left 1px solid #b2b2b2
+        border-right 1px solid #b2b2b2
+        color #808080
+        li
+          float left
+          height 1.7rem
+          line-height 1.7rem
+          text-align center
+          font-size 0.65rem
+          border-bottom 1px solid #b2b2b2
+          &:nth-child(1)
+            width 21.5%
+            border-right 1px solid #b2b2b2
+          &:nth-child(2)
+            width 37.5%
+            border-right 1px solid #b2b2b2
+          &:nth-child(3)
+            width 41%
+          span
+            display block
+            height 1.7rem
+            line-height 1.7rem
+            border-bottom 1px solid #b2b2b2
+            &:last-child
+              border none
+      .title-desc3
+        margin-top 0.75rem
+        background #e6e6e6
+        border-top 1px solid #b2b2b2
+        li
+          color #333333
+      .test-desc3
+        li
+          height 5.1rem
+          line-height 5.1rem
+
+      .test2-desc3
+        li
+          height: 3.4rem
+          line-height 3.4rem
+          .sFont
+            font-size 0.5rem
+          &.one
+            line-height 1.7rem
+            height 1.7rem
+    .questionDesc4
+      padding-bottom 1.875rem
+      p
+        line-height 1.2rem
+        font-size 0.65rem
+        color #808080
+  .growthValue-tab2
+    padding 0 0.75rem
+    background #f7f7f7
+    position:fixed
+    left 0
+    width:100%;
+    top:2.45rem
+    bottom:0;
+    overflow:hidden
+    &.lowest
+      visibility hidden
+    &>div
+      position:relative!important
+      .topTip
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        color: #999;
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 2;
+      .bottomTip
+        color: #999;
+        font-size:0.7rem;
+        text-align: center;
+        line-height: 2;
+        img
+          width:1rem
+          animation: loading 1s linear infinite;
+          margin-bottom: -0.2rem;
+          margin-right: 0.2rem;
+      ul
+        width 100%
+        li
+          width 100%
+          height 3.675rem
+          border-bottom 1px solid #d9d9d9
+          &:last-child
+            border none
+          .left
+            padding-top 0.75rem
+            width 80%
+            font-size 0.8rem
+            color #333333
+            line-height 1rem
+            span
+              line-height 1rem
+              display block
+              font-size 0.65rem
+              color #999999
+          .right
+            line-height 3.675rem
+            width 20%
+            color #fc653f
+            font-size 1rem
+@keyframes loading
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
